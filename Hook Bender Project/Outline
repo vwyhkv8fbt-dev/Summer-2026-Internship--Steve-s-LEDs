@@ -1,0 +1,20 @@
+Issue: We are powder coating 300 small pieces, so we need to bend S-hooks out of a conductive wire so that the powder workpiece can be charged and the powder will stick
+
+Goal:
+    1. Make a machine that will feed and bend MIG rod using a series of bends to make an S-hook, and cut off the piece once it has been entirely bent
+
+Concept:
+    1. Use a MIG wire feeder and a NEMA 17 stepper motor to feed through a channel where a NEMA 23 stepper motor makes tangential small turns to make a gradual bend per hook
+    2. Put the entire bending assembly of the motor and the bending bearing on a tube with a gear meshed with another NEMA 27, such that the wire can feed through the tube while the gantry turns around the wire
+    3. Make a solid base to attach the entire mechanism to with 3D modeling and 3D printing
+    4. Drive the mechanism with a DLC MAX 32 Stepper Motor Controller
+        A. Calibrate acceleration, max speed, and feed rates with LaserGRBL 
+        B. Control with G-Code
+    5. Once the hook has been finished, cut the hook off of the rest of the wire with a blade driven by a solenoid
+
+Issues: 
+    1. G-Code became overly complicated, and the time it would take to fix was not worth it for the business
+    2. The solenoid was not strong enough to cut the MIG wire
+        A. Either need a bigger solenoid or a sharper blade
+
+PROJECT UNFINISHED 

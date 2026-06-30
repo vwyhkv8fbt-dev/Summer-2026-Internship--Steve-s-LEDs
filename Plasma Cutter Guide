@@ -1,0 +1,19 @@
+Issue: The handheld plasma cutter leaves irregular cuts due to human error
+
+Goals: 
+    1. Guide the plasma cutter along a straight path to cut clean and straight lines
+    2. The plasma cutter needs to be able to travel forward and backwards along the given line
+    3. Feeds and speeds need to be able to be adjusted simply and manually so that different materials can be cut at different speeds dependent on thickness
+
+Concept:
+    1. Use a supported linear rod and a threaded rod, spun by a stepper motor, to drive a platform with a mount for the plasma torch
+    2. The stepper motor needs to be detachable (for transportation) and should be powered by a standard 120VAC outlet
+
+Issues Encountered:
+    1. The original stepper used (standard NEMA 17) did not have a high enough holding torque to have a rigid assembly
+        A. Solution: Replaced NEMA 17 with NEMA 23 and an external driver
+
+Final Design:
+    1. The external box contains the power supply, driver, power switch, and driver controller, with cords to the motor and outlet
+    2. Mounting bracket and thread to D-Shaft adapter modeled in Fusion 360 and printed in PETG on a Bambu X1 Carbon that slides on the rail to support the motor and connect the motor to the threaded rod
+    3. Direction and RPM can be controlled on the driver controller to vary feeds and speeds

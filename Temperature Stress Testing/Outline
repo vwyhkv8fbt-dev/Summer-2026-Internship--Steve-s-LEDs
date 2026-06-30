@@ -1,0 +1,9 @@
+Context: The client has placed a large order for a custom UV light fixture to be used in an industrial setting to cure UV-activated resin in a matter of seconds. Before I began this internship, the company had developed a working model ready for testing, to be sent to the client for approval and any necessary changes. 
+
+Question: How hot can the light bar get before it fails, and in what manner does it fail? How does the type of resin (professional electronic resin vs. standard UV-cured resin) chosen to fill the light impact its resistance to heat? 
+
+Test Setup: We supplied the light bar with ~80v DC at ~2.5A (within ratings for components) and bypassed the thermal switch, which was designed to cut power to the supply after hitting 160 degreees Farenheight to attempt to put the light bar into thermal runaway. A thermal camera was used to capture the temperatures of both the temperatures of the LEDs and the back of the heatsink housing of the LEDs. 
+
+Goal: The light bar needs to be able to stay on for 5 continuous minutes without lasting damage and reach 212 degrees Farenheight.
+
+Results: Both light bars lasted over 30 minutes of continuous run time without any significant damage, and both reached temperatures well above 280 degrees Farenheight. Certain LEDs did burn out, but the remainder of the bar continued to work after their destruction. The only major difference between the resins was that the professional electronic resin was a better conductor of heat, which led to the heatsink being much hotter than the standard resin's heatsink, while the LEDs themselves, while slightly cooler, were too hot to justify the price difference ($40 per gallon for the regular vs $185 per gallon for the electronics resin).
